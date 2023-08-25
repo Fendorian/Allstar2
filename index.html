@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Magic</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <section class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <p>Front</p>
+          </div>
+          <div class="card-back">
+            <p>Back</p>
+          </div>
+        </div>
+      </section>
+      
+      <input type="range" id="slider" min="0" max="100" step="1" value="50">
+      
+    <h1 id="title">Shoot it!</h1>
+
+    <section class="stage">
+        <figure class="ball bubble"></figure>
+        <figure class="ball bubble"></figure>
+        <figure class="ball bubble"></figure>
+        <figure class="ball bubble"></figure>
+    </section>
+  </div>
+  <div id="overlay" class="hidden">
+    <div id="congrats" class="hidden">
+        Congrats! You got the job!
+    </div>
+    <div id="confetti"></div>
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
